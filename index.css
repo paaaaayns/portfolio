@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "NeueMontreal-Bold"; /* Choose a name for your font family */
+  src: local("NeueMontreal-Bold"),
+    url("./assets/fonts/NeueMontreal/NeueMontreal-Bold.otf") format("woff");
+  /* Specify the path to your font file and its format */
+}
+
+@font-face {
+  font-family: "NeueMontreal-Regular"; /* Choose a name for your font family */
+  src: local("NeueMontreal-Regular"),
+    url("./assets/fonts/NeueMontreal/NeueMontreal-Regular.otf") format("woff");
+  /* Specify the path to your font file and its format */
+}
+
+@font-face {
+  font-family: "NeueMontreal-Light"; /* Choose a name for your font family */
+  src: local("NeueMontreal-Light"),
+    url("./assets/fonts/NeueMontreal/NeueMontreal-Light.otf") format("woff");
+  /* Specify the path to your font file and its format */
+}
+
+
+body {
+  color: #1e1e1e;
+  background-color: #ebebeb;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  user-select: none; /* Disable text selection */
+}
+
+.main-container {
+  height: 90%;
+  width: 95%;
+  border: 2px solid #1e1e1e;
+  position: relative;
+}
+
+.navbar-container {
+  margin-top: 0.5em;
+  margin-left: 2em;
+  display: inline-block;
+}
+
+.navbar-container h1 {
+  font-family: "NeueMontreal-Light";
+}
+
+.navbar-container p {
+  margin-top: -15px;
+  font-family: "NeueMontreal-Regular";
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'NeueMontreal-Bold';
+}
+
+.navbar a {
+  color: #1e1e1e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #a0a0a0;
+}
+
+.navbar .selected {
+  pointer-events: none;
+}
+
+.about-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1em;
+}
+
+.about-container p {
+  text-align: left;
+  font-family: "NeueMontreal-Bold";
+  line-height: 25px;
+}
