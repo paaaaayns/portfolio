@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: "NeueMontreal-Medium"; /* Choose a name for your font family */
+  src: local("NeueMontreal-Medium"),
+    url("./assets/fonts/NeueMontreal/NeueMontreal-Medium.otf") format("woff");
+  /* Specify the path to your font file and its format */
+}
+
+@font-face {
   font-family: "NeueMontreal-Regular"; /* Choose a name for your font family */
   src: local("NeueMontreal-Regular"),
     url("./assets/fonts/NeueMontreal/NeueMontreal-Regular.otf") format("woff");
@@ -22,7 +29,7 @@
 
 body {
   color: #1e1e1e;
-  background-color: #ebebeb;
+  background-color: #EBEBEB;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -38,20 +45,26 @@ body {
   width: 95%;
   border: 2px solid #1e1e1e;
   position: relative;
+  overflow: hidden;
 }
 
 .navbar-container {
-  margin-top: 0.5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 2em;
   margin-left: 2em;
   display: inline-block;
 }
 
-.navbar-container h1 {
+.navbar-container span {
+  font-size: 40px;
+  font-weight: bold;
   font-family: "NeueMontreal-Light";
 }
 
 .navbar-container p {
-  margin-top: -15px;
+  margin-top: 5px;
   font-family: "NeueMontreal-Regular";
 }
 
@@ -83,6 +96,7 @@ body {
   pointer-events: none;
 }
 
+
 .about-container {
   position: absolute;
   bottom: 0;
@@ -91,6 +105,7 @@ body {
 }
 
 .about-container p {
+  font-size: 14px;
   text-align: left;
   font-family: "NeueMontreal-Bold";
   line-height: 25px;

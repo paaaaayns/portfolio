@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: "NeueMontreal-Medium"; /* Choose a name for your font family */
+  src: local("NeueMontreal-Medium"),
+    url("./assets/fonts/NeueMontreal/NeueMontreal-Medium.otf") format("woff");
+  /* Specify the path to your font file and its format */
+}
+
+@font-face {
   font-family: "NeueMontreal-Regular"; /* Choose a name for your font family */
   src: local("NeueMontreal-Regular"),
     url("./assets/fonts/NeueMontreal/NeueMontreal-Regular.otf") format("woff");
@@ -22,7 +29,7 @@
 
 body {
   color: #1e1e1e;
-  background-color: #ebebeb;
+  background-color: #EBEBEB;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -38,20 +45,26 @@ body {
   width: 95%;
   border: 2px solid #1e1e1e;
   position: relative;
+  overflow: hidden;
 }
 
 .navbar-container {
-  margin-top: 0.5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 2em;
   margin-left: 2em;
   display: inline-block;
 }
 
-.navbar-container h1 {
+.navbar-container span {
+  font-size: 40px;
+  font-weight: bold;
   font-family: "NeueMontreal-Light";
 }
 
 .navbar-container p {
-  margin-top: -15px;
+  margin-top: 5px;
   font-family: "NeueMontreal-Regular";
 }
 
@@ -81,4 +94,65 @@ body {
 
 .navbar .selected {
   pointer-events: none;
+}
+
+
+.courses-container {
+  width: 70%; /* Adjust the initial width as needed */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  
+  margin-top: 2em;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  overflow-y: auto; /* Enable vertical scroll if content exceeds the height */
+}
+
+.courses-container div {
+  color: #1e1e1e;
+  text-align: right;
+}
+
+.courses-container a {
+  color: #1e1e1e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #a0a0a0;
+}
+
+.courses-container::-webkit-scrollbar {
+  display: none;
+}
+
+.title-container {
+  margin-top: 3.1em;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "NeueMontreal-Light";
+  margin-bottom: 0.5em;
+}
+
+.course-container {
+  display: block; /* Set display to inline-block */
+  padding:  15px 0px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: "NeueMontreal-Regular";
+  font-size: 18px;
+  font-weight: bold;
+  color: #1e1e1e;
+  letter-spacing: 1px;
+}
+
+.course-container span {
+  font-family: "NeueMontreal-Light";
+  color: #1e1e1e;
+  letter-spacing: 1px;
 }
