@@ -98,7 +98,7 @@ body {
 
 
 .courses-container {
-  width: 50%; /* Adjust the initial width as needed */
+  width: 70%; /* Adjust the initial width as needed */
   position: absolute;
   top: 0;
   right: 0;
@@ -129,9 +129,12 @@ body {
   display: none;
 }
 
+.white-space {
+  height: 7.65em;
+}
+
 .title-container {
-  margin-top: 3.1em;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
   font-family: "NeueMontreal-Light";
   margin-bottom: 0.5em;
@@ -143,16 +146,17 @@ body {
   margin-bottom: 10px;
 }
 
-.title {
-  font-family: "NeueMontreal-Regular";
-  font-size: 18px;
+.course-container .title {
+  font-family: "NeueMontreal-Light";
   font-weight: bold;
+  font-size: 18px;
   color: #1e1e1e;
   letter-spacing: 1px;
 }
 
-.course-container span {
-  font-family: "NeueMontreal-Light";
+.course-container .details {
+  font-family: "NeueMontreal-Regular";
+  font-weight: bold;
   color: #1e1e1e;
   letter-spacing: 1px;
 }
